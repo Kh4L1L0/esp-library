@@ -12,6 +12,8 @@ npm install --save esp-library
 
 ## Usage
 
+TreeView
+
 ```jsx
 import React, { Component } from 'react'
 
@@ -21,9 +23,8 @@ class Example extends Component {
 
   onSelect = data => console.log(data);
 
-  render () {
 
-    render () {
+  render () {
     //creating TreeView structure 
     const data = [{
       id : 12,
@@ -67,6 +68,133 @@ class Example extends Component {
 
     return (
       <TreeView  data={data}/>
+      /* data = [{  
+        id : integer (must be unique)
+        label : String --node displayed name --
+        icon : String --icon path-- (optionnel)
+        isOpen : boolean --node state --
+        onSelect : function --hundlethe click even of the node -- (optionnel)
+        children : array of node type object   
+      }, ...]*/
+    )
+  }
+}
+```
+
+ProgressBar
+
+```jsx
+import React, { Component } from 'react'
+
+import {ProgressBar} from 'esp-library'
+
+class Example extends Component {
+
+
+
+
+  render () {
+
+    return (
+      <ProgressBar  percente={50}/>
+    )
+  }
+}
+```
+
+Accordion 
+
+```jsx
+import React, { Component } from 'react'
+
+import {Accordion} from 'esp-library'
+
+class Example extends Component {
+
+
+
+
+  render () {
+
+    return (
+        <Accordion allowMultipleOpen>
+          <div label="first">
+            <ul>
+              <li>example 1</li>
+              <li>example 2</li>
+            </ul>
+          </div>
+          <div label="second">
+            <p>text here</p>
+          </div>
+        </Accordion>
+    )
+  }
+}
+```
+
+Tabs
+
+```jsx
+import React, { Component } from 'react'
+
+import {Accordion} from 'esp-library'
+
+class Example extends Component {
+
+
+
+  render () {
+
+    return (
+      <Tabs>
+        <div label="Gator">
+          See ya later, <em>Alligator</em>!
+        </div>
+        <div label="Croc">
+          After &apos;while, <em>Crocodile</em>!
+        </div>
+        <div label="Sarcosuchus">
+          Nothing to see here, this tab is <em>extinct</em>!
+        </div>
+      </Tabs>
+    )
+  }
+}
+```
+
+Dialog 
+
+```jsx
+import React, { Component } from 'react'
+
+import {Accordion} from 'esp-library'
+
+class Example extends Component {
+
+  state = {
+    isOpen : false
+  }
+
+  //manage Dialog responce res : boolean
+  result = (res) => {
+    console.log(res)
+  }
+  render () {
+
+
+    return (
+      <div>
+        <button onClick={e => this.setState({ isOpen: true })}>open</button>
+        <Dialog
+          typeof="option"
+          onClose={e => this.setState({ isOpen: false })}
+          isOpen={this.state.isOpen}
+          result={this.result}
+        >
+          hello world
+        </Dialog>
+      </div>
     )
   }
 }
