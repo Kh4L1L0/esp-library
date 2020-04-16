@@ -1,0 +1,123 @@
+
+
+.test {
+  display: inline-block;
+  margin: 2em auto;
+  border: 2px solid #000;
+  font-size: 2em;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.Node{
+  border: 2px #000 solid;
+  width: 200px;
+  height: 50px;
+}
+
+
+.dialog {
+  padding-top: 10%;
+  background: #fff;
+  font-family: "RobotoDraft", sans-serif;
+  margin-top: 500px;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 15px;
+
+  transition: all 0.5s ease-in-out;
+  /* opacity: 0; */
+  z-index: 500;
+}
+.dialogButton:hover {
+  background-color: #21212150;
+}
+.dialogButton {
+  float: right;
+  font-size: 20px;
+  margin-top: -2.5px;
+  outline: none;
+  border: none;
+  background-color: #21212100;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.dialogText {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.confirmButton {
+  margin-top: 20%;
+  position: relative;
+  width: 150px;
+  height: 37px;
+  border: none;
+  outline: none;
+  letter-spacing: 3px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 3px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4);
+  background: #212121;
+  color: #fff;
+}
+
+.AccordionHead{
+  cursor: pointer;
+}
+
+.AccordionBotton{
+  background-color: #2264f3;
+  border: "2px solid #008f68";
+  margin-top: 10;
+}
+
+.tab-list {
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+}
+
+.bar-progress{
+  position: relative;
+  height: 25px;
+  width: 100%;
+  border-radius: 50px;
+  border:1px solid #333;
+}
+
+.bar-filler{
+  background: #1da598;
+  height: 100%;
+  border-radius: inherit;
+  transition: width .2s ease-in;
+}
+
+.container{
+  transition: all .3s ease;
+}
