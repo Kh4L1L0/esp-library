@@ -15,12 +15,58 @@ npm install --save esp-library
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'esp-library'
+import {TreeView} from 'esp-library'
 
 class Example extends Component {
+
+  onSelect = data => console.log(data);
+
   render () {
+
+    render () {
+    //creating TreeView structure 
+    const data = [{
+      id : 12,
+      label : "root",
+      icon : icon,
+      isOpen : true,
+      children : [{   id : 19,
+                    label : "rChild1",
+                    icon : icon,
+                    isOpen : true,
+                    onSelect: this.onSelect,
+                    children : []
+                },{   id : 18,
+                  label : "rChild2",
+                  icon : icon,
+                  isOpen : true,
+                  children : [
+                    {id : 39,
+                    label : "rc",
+                    isOpen : true,
+                    onSelect: this.onSelect,
+                    children : []
+                }]
+              },{   id : 17,
+                label : "rChild3",
+                icon : icon,
+                isOpen : true,
+                onSelect: this.onSelect,
+                children : []
+            }]
+    },{
+      id : 14,
+      label : "rChild3",
+      icon : icon,
+      isOpen : true,
+      onSelect: this.onSelect,
+      children : []
+    }
+  
+  ];
+
     return (
-      <MyComponent />
+      <TreeView  data={data}/>
     )
   }
 }
