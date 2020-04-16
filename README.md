@@ -168,7 +168,7 @@ Dialog
 ```jsx
 import React, { Component } from 'react'
 
-import {Accordion} from 'esp-library'
+import {Dialog} from 'esp-library'
 
 class Example extends Component {
 
