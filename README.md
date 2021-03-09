@@ -1,6 +1,6 @@
 # esp-library
 
-> component library for the end of studies project by Khalil Jabbahi and Tarik Sghiouri Idrissi
+> Resct.js component library  by Khalil Jabbahi and Tarik Sghiouri Idrissi
 
 [![NPM](https://img.shields.io/npm/v/esp-library.svg)](https://www.npmjs.com/package/esp-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
